@@ -30,6 +30,10 @@ app.controller('RomanController', function($scope) {
             }
         }
 
-        return number;
+        if ( number > 9000 ) {
+            return "OVER 9000!!!!!!";
+        } else {
+            return number;
+        }
     }
 });
