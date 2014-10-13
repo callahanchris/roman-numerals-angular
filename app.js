@@ -13,7 +13,7 @@ app.controller('RomanController', function($scope) {
     },
 
     $scope.deromanize = function() {
-        if ( $scope.roman.match(/[^MDCLXVI]|D[M]|D{2,}|C{4,}|L[^XVI]|L{2,}|X[MD]|X{4,}|V[^I]|V{2,}|I[^XVI]|I{4,}/) ) {
+        if ( $scope.roman.match(/[^MDCLXVI]|D[M]|D{2,}|C{4,}|L[^XVI]|L{2,}|X[MD]|X{4,}|V[^I]|V{2,}|I[^XVI]|I{4,}|IV[IVX]|IX[IVX]/) ) {
             return "NaRN (Not a Roman Numeral)";
         } else if ( $scope.roman === "" ) {
             return "Perhaps zero?";
