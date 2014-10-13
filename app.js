@@ -14,6 +14,11 @@ app.controller('RomanController', function($scope) {
 
     $scope.deromanize = function() {
         var arr = $scope.roman.split("");
+
+        if ( $scope.roman.match(/[^MDCLXVI]|D[M]|D{2,}|C{4,}|L[^XVI]|L{2,}|X[MD]|X{4,}|V[^I]|V{2,}|I[^XVI]|I{4,}/) ) {
+            return "Not a valid Roman numeral!";
+        }
+
         var number = 0;
 
         for ( var i = 0; i < arr.length; i++ ) {
