@@ -1,3 +1,26 @@
 body {
   font-family: 'Bentham', serif;
 }
+
+.container {
+  text-align: center;
+  font-size: 30px;
+  color: #800020;
+}
+
+h1 {
+  font-size: 56px;
+  font-weight: bold;
+}
+
+#roman {
+  padding: 75px 50px;
+}
+
+span {
+  font-size: 72px;
+}
+
+input {
+  text-align: center;
+}

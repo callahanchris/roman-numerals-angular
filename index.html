@@ -1,20 +1,24 @@
-<html>
+<!DOCTYPE html>
 <head>
-  <title>Roman Numerals</title>
-  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
-  <script src="app.js"></script>
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
-  <link href='http://fonts.googleapis.com/css?family=Bentham' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" type="text/css" href="app.css">
+    <title>Roman Numerals</title>
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+    <script src="app.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+    <link href='http://fonts.googleapis.com/css?family=Bentham' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="app.css">
 </head>
 <body ng-app="romanNumerals">
-    <div ng-controller="RomanController">
-        <h1>KNOW YOVR ROMAN NVMERALS</h1>
-        <div>
-            Roman Numeral: <input type="text" ng-model="roman" />
-        </div>
-        <div>
-            Integer: {{ deromanize(roman) }}
+    <div class="container">
+        <div ng-controller="RomanController">
+            <h1>KNOW YOVR ROMAN NVMERALS</h1><hr />
+            <div id="roman">
+                a Roman numeral:<br>
+                <span><input type="text" ng-model="roman" /></span>
+            </div>
+            <div id="integer">
+                in today's parlance:<br>
+                <span>{{ deromanize(roman) }}</span>
+            </div>
         </div>
     </div>
 </body>
